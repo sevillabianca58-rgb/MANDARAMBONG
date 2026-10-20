@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shanne Kian A. Ramirez | Portfolio</title>
+  <meta name="description" content="Portfolio of Shanne Kian A. Ramirez, a second-year BS Computer Science student and web developer in training at Norzagaray College.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shanne/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="bg-photo" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="auto" poster="shanne/assets/images/background-poster.jpg">
+      <source src="shanne/assets/video/background.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Welcome screen -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__icons">
+      <span><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg></span>
+      <span><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+      <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+    </div>
+    <h2 class="loader__title">Welcome to my<br>Portfolio Website</h2>
+    <span class="loader__tag">Shanne Kian A. Ramirez</span>
+  </div>
+
+
+  <aside class="sidebar" id="sidebar" aria-label="Site menu">
+    <button class="sb__toggle" id="sbToggle" type="button" aria-expanded="true" aria-label="Collapse sidebar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button>
+    <div class="sb__head"><span class="sb__logo">SK</span><span class="sb__title sb__text">Shanne Kian</span></div>
+    <div class="sb__search" id="sbSearchBox"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="sbSearch" type="search" placeholder="Search" aria-label="Search the menu" autocomplete="off"></div>
+    <p class="sb__label">Menu</p>
+    <nav aria-label="Sidebar">
+      <ul class="sb__list" id="sbList">
+        <li><a href="#home" data-spy="home" data-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span class="sb__text">Home</span></a></li>
+        <li><a href="#about" data-spy="about" data-label="About"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="sb__text">About</span></a></li>
+        <li><a href="#portfolio" data-spy="tab-projects" data-tab="tab-projects" data-label="Projects"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><span class="sb__text">Projects</span><em class="sb__badge">4</em></a></li>
+        <li><a href="#portfolio" data-spy="tab-certs" data-tab="tab-certs" data-label="Certificates"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14 -1.5 7 5-3 5 3-1.5-7"/></svg><span class="sb__text">Certificates</span></a></li>
+        <li><a href="#portfolio" data-spy="tab-tech" data-tab="tab-tech" data-label="Tech Stack"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5M3 17.5l9 5 9-5"/></svg><span class="sb__text">Tech Stack</span></a></li>
+        <li><a href="#contact" data-spy="contact" data-label="Contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="sb__text">Contact</span></a></li>
+      </ul>
+    </nav>
+    <p class="sb__none" id="sbNone" hidden>No match</p>
+    <div class="sb__foot">
+      <a class="sb__link sb__back" href="index.html#members" data-label="Team website"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span class="sb__text">Team Website</span></a>
+      <a class="sb__cta" href="shanne/assets/resume/Shanne-Kian-Ramirez-CV.pdf" target="_blank" rel="noopener" data-label="View CV"><span class="sb__pro">CV</span><span class="sb__text">View CV</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="sb__link" href="mailto:ramirezshanne05@gmail.com" data-label="Email me"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="sb__text">Email me</span></a>
+    </div>
+  </aside>
+
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="nav__brand" href="#home">shanne.dev</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span></button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="is-active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#members">&larr; Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="dot"></span> Open to learning opportunities</p>
+        <h1 class="hero__name"><span>Shanne Kian</span><span class="alt">A. Ramirez</span></h1>
+        <p class="hero__role">Web Developer in Training<span class="caret">_</span></p>
+        <p class="hero__intro">I'm Shanne Kian A. Ramirez, a Computer Science student and aspiring web developer passionate about building useful, creative, and meaningful digital experiences. I'm continuously learning, improving my skills, and turning ideas into projects that bring me closer to my dreams.</p>
+        <ul class="chips" aria-label="Core web skills"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#portfolio">Explore My Work</a>
+          <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+        </div>
+        <p class="hint">↓ explore my work below<br>↗ BS Computer Science, Norzagaray College</p>
+      </div>
+
+      <div class="lanyard" aria-hidden="true">
+        <div class="lanyard__strap"><span>NORZAGARAY COLLEGE</span><span>BSCS</span></div>
+        <div class="lanyard__card">
+          <img src="shanne/assets/images/hero-card.jpg" alt="" width="333" height="444">
+        </div>
+      </div>
+      <span class="scroll-cue">Scroll ↓</span>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="wrap about__grid">
+        <div class="about__main">
+          <p class="label">About me</p>
+          <h2 class="display">Shanne Kian<br>A. Ramirez</h2>
+          <p class="about__lead">Second-year Bachelor of Science in Computer Science student at Norzagaray College, building skills in web development, programming, and digital innovation.</p>
+          <blockquote class="quote">"Turning ideas into digital experiences, one line of code at a time."</blockquote>
+          <div class="about__cta">
+            <a class="btn btn--dark" href="shanne/assets/resume/Shanne-Kian-Ramirez-CV.pdf" target="_blank" rel="noopener">View CV</a>
+            <a class="btn btn--outline" href="#portfolio">View Projects</a>
+          </div>
+        </div>
+        <div class="about__photo"><img src="shanne/assets/images/portrait.jpg" alt="Portrait of Shanne Kian A. Ramirez" width="333" height="444"></div>
+      </div>
+
+      <div class="wrap stats">
+        <div class="stat"><span class="stat__icon">&lt;/&gt;</span><b>4</b><span>Projects</span></div>
+        <div class="stat"><span class="stat__icon">★</span><b>1</b><span>Certificates</span></div>
+        <div class="stat"><span class="stat__icon">◎</span><b>2</b><span>Dean's List semesters</span></div>
+      </div>
+
+      <div class="wrap story">
+        <h3 class="story__title">More Than Just Code</h3>
+        <div class="story__body">
+          <p>I'm Shanne Kian A. Ramirez, a second-year Bachelor of Science in Computer Science student at Norzagaray College. My journey in technology is driven by curiosity, creativity, and a strong desire to create a better future for myself and the people I love.</p>
+          <p>My greatest inspiration is my mother and my family. Their sacrifices, love, and support remind me why I must keep moving forward, even when things get difficult. I carry a personal dream of overcoming the challenges of poverty, giving my mother a better life, and someday giving back to her for everything she has done for me.</p>
+          <p>Every line of code I write, every skill I learn, and every project I complete is another step toward that dream. I know I still have a lot to learn, but I believe that discipline, perseverance, and a willingness to improve can turn small beginnings into meaningful achievements.</p>
+          <p>Beyond programming, I enjoy playing online games, basketball, chess, and reading light novels, manga, manhwa, and manhua. These interests reflect my love for strategy, creativity, storytelling, and continuous discovery.</p>
+          <p>I'm not just building projects. I'm building my skills, my opportunities, and the future I want to give back to my family.</p>
+        </div>
+      </div>
+
+      <div class="wrap info">
+        <div class="info__card"><span>Year level</span><b>Second Year</b></div>
+        <div class="info__card"><span>Course</span><b>BS Computer Science</b></div>
+        <div class="info__card"><span>Institution</span><b>Norzagaray College</b></div>
+        <div class="info__card"><span>1st semester GWA</span><b>1.35</b></div>
+        <div class="info__card"><span>2nd semester GWA</span><b>1.25</b></div>
+        <div class="info__card"><span>Learning interests</span><b>Web Development, Game Development, UI/UX, How to Love Jennica Biloy Bonggal</b></div>
+      </div>
+
+      <div class="wrap interests">
+        <p class="label">Interests</p>
+        <ul class="tags">
+          <li>Web development</li><li>Game development</li><li>UI/UX</li><li>Online games</li>
+          <li>Basketball</li><li>Chess</li><li>Light novels</li><li>Manga, manhwa &amp; manhua</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="showcase" id="portfolio">
+      <div class="wrap">
+        <h2 class="display display--center">Portfolio Showcase</h2>
+        <p class="showcase__sub">Explore my journey through projects, certifications, and technical expertise.</p>
+
+        <div class="tabs" role="tablist" aria-label="Portfolio categories">
+          <button role="tab" id="tab-projects" aria-controls="panel-projects" aria-selected="true" class="tab is-active">Projects</button>
+          <button role="tab" id="tab-certs" aria-controls="panel-certs" aria-selected="false" class="tab" tabindex="-1">Certificates</button>
+          <button role="tab" id="tab-tech" aria-controls="panel-tech" aria-selected="false" class="tab" tabindex="-1">Tech Stack</button>
+        </div>
+
+        <div class="panel is-active" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
+          <div class="cards">
+            <article class="card">
+              <div class="card__img"><img src="shanne/assets/images/stockmind.jpg" alt="StockMind inventory screen showing products, SKUs, stock levels and reorder points" loading="lazy"></div>
+              <h3>StockMind</h3>
+              <p>An inventory management app with product stock tracking, low-stock alerts, selling, barcode scanning, purchase orders, suppliers, and sales history and forecasting.</p>
+              <ul class="mini"><li>Interactive demo</li></ul>
+            </article>
+            <article class="card">
+              <div class="card__img"><img src="shanne/assets/images/laundry.jpg" alt="TipidSulit Laundromat app home screen with Job Orders, Check Status, Customers, Staff and Stations buttons" loading="lazy"></div>
+              <h3>Laundry Shop Transaction System</h3>
+              <p>A transaction management application for handling laundry-service records and related customer transactions.</p>
+              <p class="meta">Role: Programmer</p>
+              <ul class="mini"><li>Python</li><li>MySQL Workbench</li></ul>
+            </article>
+            <article class="card">
+              <div class="card__img"><img src="shanne/assets/images/mandarambong.jpg" alt="Home page of the MANDARAMBONG team website" loading="lazy"></div>
+              <h3>MANDARAMBONG Team Website</h3>
+              <p>A collaborative team website where members present their individual portfolios and showcase their work.</p>
+              <p class="meta">Role: Frontend Developer and Backend Contributor</p>
+              <ul class="mini"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </article>
+            <article class="card card--pending">
+              <div class="card__img"><img src="shanne/assets/images/placeholder.svg" alt="" loading="lazy"><span class="badge">Details pending</span></div>
+              <h3>Fourth Project</h3>
+              <p>Project details will be added here.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-certs" role="tabpanel" aria-labelledby="tab-certs" hidden>
+          <div class="certs">
+            <button class="cert" id="certOpen" type="button" aria-label="Enlarge certificate">
+              <img src="shanne/assets/images/certificate.jpg" alt="Certificate of Recognition from Norzagaray College for the Dean's List, First and Second Semester A.Y. 2025–2026" loading="lazy">
+            </button>
+            <div class="cert__info">
+              <h3>Certificate of Recognition</h3>
+              <p>Dean's List, First Semester and Second Semester, A.Y. 2025–2026. Awarded by the Office of Student Affairs, Norzagaray College, on February 20, 2026.</p>
+              <dl class="facts">
+                <div><dt>Education</dt><dd>Norzagaray College</dd></div>
+                <div><dt>Program</dt><dd>Bachelor of Science in Computer Science, Second Year</dd></div>
+                <div><dt>1st semester GWA</dt><dd>1.35</dd></div>
+                <div><dt>2nd semester GWA</dt><dd>1.25</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-tech" role="tabpanel" aria-labelledby="tab-tech" hidden>
+          <div class="tech">
+            <h3>Web development</h3>
+            <ul class="tiles"><li><i>&lt;/&gt;</i>HTML</li><li><i>{ }</i>CSS</li><li><i>JS</i>JavaScript</li></ul>
+            <h3>Programming and databases</h3>
+            <ul class="tiles"><li><i>Py</i>Python</li><li><i>VB</i>VB.NET</li><li><i>SQL</i>SQL</li><li><i>DB</i>MySQL Workbench</li></ul>
+            <h3>Game development</h3>
+            <ul class="tiles"><li><i>U</i>Unity</li></ul>
+            <h3>Creative tools</h3>
+            <ul class="tiles"><li><i>Cv</i>Canva</li><li><i>Cc</i>CapCut</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <p class="label label--light">Contact</p>
+        <h2 class="display display--light">Let's Connect</h2>
+        <p class="contact__sub">Have something in mind? Send a message and let's talk about it.</p>
+        <div class="contact__grid">
+          <form class="panelbox" id="contactForm" novalidate>
+            <h3>Send me a message</h3>
+            <label for="cName">Your name</label>
+            <input id="cName" name="name" type="text" autocomplete="name" required>
+            <label for="cEmail">Your email</label>
+            <input id="cEmail" name="email" type="email" autocomplete="email" required>
+            <label for="cSubject">Subject</label>
+            <input id="cSubject" name="subject" type="text">
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" name="message" rows="5" required></textarea>
+            <button class="btn btn--solid" type="submit">Prepare email</button>
+            <p class="form-note" id="formNote" role="status">This opens your email app with the message filled in. It is not sent until you press send there.</p>
+          </form>
+
+          <div class="panelbox">
+            <h3>Reach me directly</h3>
+            <ul class="links">
+              <li><a href="mailto:ramirezshanne05@gmail.com"><span class="ico">@</span>ramirezshanne05@gmail.com</a></li>
+              <li><a href="https://www.facebook.com/share/1YPRKxzuHZ/" target="_blank" rel="noopener"><span class="ico">f</span>Facebook</a></li>
+              <li><a href="https://www.instagram.com/kikiyannnnnnn?dlrf=MTRlNm05NTBmOHF4aA==" target="_blank" rel="noopener"><span class="ico">ig</span>Instagram</a></li>
+              <li><a href="shanne/assets/resume/Shanne-Kian-Ramirez-CV.pdf" target="_blank" rel="noopener"><span class="ico">cv</span>Résumé (PDF)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__row">
+      <span>© <span id="year">2026</span> Shanne Kian A. Ramirez</span>
+      <span>BS Computer Science · Norzagaray College</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+    <img src="shanne/assets/images/certificate.jpg" alt="Certificate of Recognition, enlarged">
+  </div>
+
+  <script src="shanne/js/main.js"></script>
+</body>
+</html>

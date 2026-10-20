@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020a0b">
+  <title>Westly A. Evasco | Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="westly.css">
+</head>
+<body>
+  <a class="back-to-team" href="index.html" aria-label="Back to MANDARAMBONG team website">
+    <span aria-hidden="true">←</span> Back to Team Website
+  </a>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Westly home"><span class="brand-mark">W</span><span>Westly A. <b>Evasco</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navLinks">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Let's Talk <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">// DESIGNER PORTFOLIO</p>
+        <h1>Hi, I'm<br><span>Westly A. Evasco</span></h1>
+        <h2>BSCS Student <i>|</i> Designer</h2>
+        <p class="hero-intro">I create clean, modern, user-friendly designs.<span class="typing-caret"></span></p>
+        <div class="hero-actions">
+          <a class="button button-filled" href="#projects">View My Projects <span>→</span></a>
+          <a class="button button-outline" href="#about">About Me</a>
+        </div>
+        <div class="social-links" aria-label="Social links">
+          <a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="GitHub">⌘</a><a href="mailto:westlyevasco@gmail.com" aria-label="Email">✉</a>
+        </div>
+        <a class="scroll-cue" href="#about"><span>↓</span> Scroll Down</a>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="photo-frame hero-frame"><img src="images/westly-profile.png" alt="Westly wearing sunglasses and a white shirt"></div>
+        <div class="hand-note">Design<br>Create<br>Improve</div>
+        <div class="hero-index"><b>01</b><span>/</span><span>05</span><i></i></div>
+        <div class="decor-grid"></div>
+      </div>
+    </section>
+
+    <section class="about section-shell section-divider" id="about">
+      <div class="about-copy reveal">
+        <p class="eyebrow">// ABOUT ME</p>
+        <h2>More About <span>Me</span></h2>
+        <p>I'm Westly A. Evasco, a 2nd-year BSCS student and a designer. I enjoy creating designs, exploring new ideas, and improving my skills in UI/UX and visual design. I'm passionate about technology, creativity, and turning ideas into something useful.</p>
+        <a class="button button-outline small-button" href="#contact">Let's Connect <span>→</span></a>
+      </div>
+      <div class="about-photo-wrap reveal">
+        <div class="photo-frame about-frame"><img src="images/westly-about.jpg" alt="Westly sitting on a bench in a red shirt"></div>
+        <span class="photo-caption">Same guy.<br>Different angles.</span>
+      </div>
+      <div class="quick-info reveal">
+        <p class="eyebrow">// QUICK INFO</p>
+        <div class="info-row"><span class="info-icon">♧</span><div><small>Course / Year</small><p>BSCS – 2nd Year, BSCS-2C</p></div></div>
+        <div class="info-row"><span class="info-icon">♙</span><div><small>Role sa Team</small><p>Designer</p></div></div>
+        <p class="eyebrow language-heading">// PROGRAMMING LANGUAGES</p>
+        <div class="language-pills"><span>JavaScript</span><span>Visual Basic .NET</span><span>SQL / MySQL</span></div>
+      </div>
+    </section>
+
+    <section class="skills section-shell section-divider" id="skills">
+      <div class="skills-main reveal">
+        <p class="eyebrow">// SKILLS</p>
+        <h2>My Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-card"><span>✧</span>Creativity</div>
+          <div class="skill-card"><span>▣</span>UI/UX Design</div>
+          <div class="skill-card"><span>▦</span>Layout Design</div>
+          <div class="skill-card"><span>◉</span>Color Combination</div>
+          <div class="skill-card"><span>♧</span>Teamwork</div>
+          <div class="skill-card"><span>⚙</span>Problem Solving</div>
+        </div>
+      </div>
+      <blockquote class="design-quote reveal"><span>“</span><p>Good design<br>is not just what it looks like,<br>but how it works.</p><cite>— Westly</cite></blockquote>
+    </section>
+
+    <section class="projects section-shell section-divider" id="projects">
+      <div class="section-heading reveal"><div><p class="eyebrow">// FEATURED PROJECTS</p><h2>My <span>Projects</span></h2></div><a href="#contact" class="text-link">View All Projects <span>→</span></a></div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-image project-plant"><div class="mock-phone"><div class="phone-leaf">❧</div><strong>AGRISCAN</strong><small>Plant Health Monitor</small><div class="phone-status">Plant looks healthy</div></div></div>
+          <div class="project-body"><div class="project-title"><span class="project-icon">◈</span><h3>AGRISCAN App</h3></div><p>An AI-powered app concept that detects plant diseases and provides weather information for farmers.</p><div class="project-meta"><span>Mobile App</span><i>|</i><span>UI/UX Design</span><a href="#contact" aria-label="AGRISCAN project details">↗</a></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image project-library"><div class="laptop-screen"><div class="screen-top"></div><div class="screen-layout"><aside></aside><div class="screen-content"><b>Library System</b><span></span><span></span><span></span><span></span></div></div></div></div>
+          <div class="project-body"><div class="project-title"><span class="project-icon">▤</span><h3>Student Library Borrowing System</h3></div><p>A system concept for managing library book borrowing records and student information.</p><div class="project-meta"><span>Web Application</span><i>|</i><span>UI/UX Design</span><a href="#contact" aria-label="Library project details">↗</a></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image project-design"><div class="design-tile tile-canva">Canva</div><div class="design-tile tile-edit">▶</div><div class="timeline"><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="project-body"><div class="project-title"><span class="project-icon">◩</span><h3>Digital Design Service</h3></div><p>A project focused on creating digital designs and video edits for students, businesses, and individuals.</p><div class="project-meta"><span>Design</span><i>|</i><span>Video Editing</span><a href="#contact" aria-label="Digital design project details">↗</a></div></div>
+        </article>
+      </div>
+      <p class="sample-note">Project thumbnails are editable CSS mockups. Replace them with your real screenshots when available.</p>
+    </section>
+
+    <section class="bottom-section section-shell section-divider">
+      <div class="achievements reveal" id="achievements">
+        <p class="eyebrow">// ACHIEVEMENTS</p><h2>My <span>Achievements</span></h2>
+        <div class="achievement-grid">
+          <div class="achievement-card"><span>✂</span><p>Completed academic projects and activities.</p></div>
+          <div class="achievement-card"><span>♧</span><p>Improved creativity and teamwork skills.</p></div>
+          <div class="achievement-card"><span>♙</span><p>Gained experience in designing project layouts.</p></div>
+          <div class="achievement-card"><span>◩</span><p>Continuously learning and improving my skills.</p></div>
+        </div>
+      </div>
+      <div class="contact reveal" id="contact">
+        <p class="eyebrow">// CONTACT</p><h2>Get In <span>Touch</span></h2><p>Let's work together or just say hi!</p>
+        <a class="contact-line" href="mailto:westlyevasco@gmail.com">✉ <span>westlyevasco@gmail.com</span></a>
+        <a class="contact-line" href="https://github.com/" target="_blank" rel="noreferrer">⌘ <span>GitHub profile (add your link)</span></a>
+        <a class="button button-filled contact-button" href="mailto:westlyevasco@gmail.com">Send Message <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">W</span><span>Westly A. <b>Evasco</b></span></a><span>BSCS Student <i>|</i> Designer</span><small>© <span id="year"></span> Westly A. Evasco. All rights reserved.</small><a class="back-top" href="#home" aria-label="Back to top">↑</a></footer>
+  <div class="animation-strip"><b>Animation Features:</b><span>✧ Fade In</span><span>↥ Slide Up</span><span>✦ Hover Glow</span><span>⌁ Typing Effect</span><span>⇅ Smooth Scrolling</span></div>
+  <script src="westly.js"></script>
+</body>
+</html>
