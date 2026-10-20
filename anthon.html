@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anthon P. Manulong | BSCS Portfolio</title>
+<meta name="description" content="Portfolio of Anthon P. Manulong (Anton), a second-year BSCS student.">
+<meta name="theme-color" content="#7FA8D8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%97%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="anthon/anthon.css">
+</head>
+<body>
+<header><nav aria-label="Main">
+<a class="logo" href="#home">Anton<span>♥</span></a>
+<button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">☰</button>
+<ul id="menu">
+<li><a class="back" href="index.html">← Back to Home</a></li>
+<li><a href="#home">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></header>
+<main>
+<section id="home"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="wrap hero">
+<div>
+<span class="tag">Anton</span>
+<h1>Hi, I'm Anthon P. Manulong.</h1>
+<p class="sub">BSCS Student | Aspiring Computer Professional | Tech Enthusiast</p>
+<p>I'm a second-year Computer Science student passionate about technology, programming, computer systems, and continuous learning.</p>
+<div class="cta"><a class="btn" href="#about">Explore My Portfolio</a><a class="btn alt" href="#projects">View My Projects</a></div>
+</div>
+<div class="photo"><div class="ring"></div><img src="images/anthon.jpg" alt="Portrait of Anthon P. Manulong" width="340" height="340"></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2 class="title rv">Get to Know Me</h2>
+<div class="about rv">
+<p class="intro">I am a Computer Science student who enjoys playing games, exploring technology, and learning new skills. I am interested in programming and computer systems. I also enjoy working with my teammates and improving my skills through school projects.</p>
+<div class="card"><h3>Profile</h3><dl style="margin-top:14px">
+<div><dt>Name</dt><dd>Anthon P. Manulong</dd></div>
+<div><dt>Nickname</dt><dd>Anton</dd></div>
+<div><dt>Course</dt><dd>Bachelor of Science in Computer Science</dd></div>
+<div><dt>Year Level</dt><dd>Second Year</dd></div>
+<div><dt>Team Role</dt><dd>Documenter</dd></div></dl></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2 class="title rv">My Skills</h2>
+<div class="grid" id="skillGrid"></div>
+<h2 class="title rv" style="margin-top:80px">Technologies I'm Learning</h2>
+<div class="grid tech" id="techGrid"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2 class="title rv">My Projects</h2>
+<div class="proj" id="projGrid"></div>
+</div></section>
+
+<section id="achievements"><div class="wrap">
+<h2 class="title rv">My Achievements</h2>
+<div class="tl">
+<div class="card rv c1"><div class="ico c1">📚</div><div><h3>School projects</h3><p>Completed different school projects.</p></div></div>
+<div class="card rv c2"><div class="ico c3">🧠</div><div><h3>Programming and problem-solving</h3><p>Improved my programming and problem-solving skills.</p></div></div>
+<div class="card rv cert"><div class="ico c0">🏅</div><div><h3>TESDA Computer Systems Servicing (CSS) NC II</h3><p>Earned a TESDA Computer Systems Servicing (CSS) NC II certification.</p></div></div>
+</div></div></section>
+
+<section id="hobbies"><div class="wrap">
+<h2 class="title rv">Beyond the Code</h2>
+<div class="grid hob">
+<div class="card rv c0"><span class="e">🎮</span><p>Playing online games</p></div>
+<div class="card rv c1"><span class="e">♟️</span><p>Playing chess</p></div>
+<div class="card rv c2"><span class="e">🕹️</span><p>Exploring new games</p></div>
+<div class="card rv c3"><span class="e">🎧</span><p>Listening to music</p></div>
+<div class="card rv c1"><span class="e">💻</span><p>Learning about technology</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<h2 class="title rv">Let's Connect</h2>
+<div class="contact rv">
+<div><p class="msg">Thank you for visiting my portfolio! Feel free to connect with me through my social media accounts or email.</p>
+<ul class="links">
+<li><a href="mailto:anthonmanulong07@gmail.com">✉️ anthonmanulong07@gmail.com</a></li>
+<li><a href="https://www.facebook.com/anthon.pasil.manulong.2025" target="_blank" rel="noopener noreferrer">👍 Facebook</a></li>
+<li><a href="https://www.instagram.com/p4ncit_canthon?obrf=MXU0bDB6bHI1cm9pdg==MY" target="_blank" rel="noopener noreferrer">📸 Instagram</a></li></ul></div>
+<form class="card" id="form" novalidate>
+<p class="note">Front-end demo: this form does not send messages. After you fill it in, you can open it in your email app.</p>
+<label for="n">Name</label><input id="n" autocomplete="name"><div class="err" data-for="n"></div>
+<label for="e">Email</label><input id="e" type="email" autocomplete="email"><div class="err" data-for="e"></div>
+<label for="s">Subject</label><input id="s"><div class="err" data-for="s"></div>
+<label for="m">Message</label><textarea id="m" rows="4"></textarea><div class="err" data-for="m"></div>
+<button class="btn" type="submit" style="margin-top:8px">Check my message</button>
+<div id="status" role="status" aria-live="polite"></div>
+</form></div></div></section>
+</main>
+<footer>Made with ♥ by Anthon P. Manulong</footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<dialog id="dlg" aria-labelledby="dt"><button class="close" aria-label="Close">✕</button><h3 id="dt"></h3><div id="db"></div></dialog>
+
+<script src="anthon/anthon.js"></script>
+</body>
+</html>
