@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kian Xyruz Chavez (Vez) | Portfolio</title>
+<meta name="description" content="BSCS student, UI designer and aspiring software developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="chavez.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"><div class="stars" id="stars"></div><div class="moon" id="moon"></div><div class="mist m1"></div><div class="mist m2"></div><div class="mist m3"></div></div>
+<canvas id="qi" aria-hidden="true"></canvas>
+<div class="cdot" id="cdot"></div><div class="cring" id="cring"></div>
+
+<nav id="nav"><div class="wrap">
+  <a href="#home" class="logo">VEZ<b>.</b></a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <ul class="links" id="links">
+    <li><a href="#home" class="active">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li>
+  </ul></div></nav>
+
+<main>
+<section id="home"><div class="wrap hero" id="hero">
+  <div>
+    <p class="hello">Hello, I'm</p>
+    <h1 id="name">Kian Xyruz Chavez</h1>
+    <div class="role" id="role" aria-live="off"></div>
+    <p class="desc">I enjoy programming, technology, and game development, and I build projects that sharpen my problem-solving and creativity.</p>
+    <div class="btns">
+      <a href="#projects" class="btn fill">View Projects →</a>
+      <a href="#contact" class="btn out">Contact Me</a>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/chvzXYZ" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8c-.3 0-1.3-.2-2.5-.2-2.6 0-4.2 1.600-4.2 4.400v2.500H7.400v3.300h2.800V22z"/></svg></a>
+      <a href="https://www.instagram.com/chvz_xyz?exln=bWZtOXduMWdmMWJs" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.800 2h8.400A5.800 5.800 0 0 1 22 7.800v8.400a5.800 5.800 0 0 1-5.800 5.800H7.800A5.800 5.800 0 0 1 2 16.200V7.800A5.800 5.800 0 0 1 7.800 2zm0 1.800A4 4 0 0 0 3.800 7.800v8.400a4 4 0 0 0 4 4h8.400a4 4 0 0 0 4-4V7.800a4 4 0 0 0-4-4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.800a3.200 3.200 0 1 0 0 6.400 3.200 3.200 0 0 0 0-6.400zM17.300 5.500a1.200 1.200 0 1 1 0 2.400 1.200 1.200 0 0 1 0-2.400z"/></svg></a>
+      <a href="mailto:kianxyruz93@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.400L4.500 7H4v.4l8 5.800 8-5.800V7h-.5z"/></svg></a>
+    </div>
+  </div>
+  <div class="portal" id="portal">
+    <!-- Dao rune circle (built by JS) -->
+    <svg class="runes" id="runes" viewBox="-200 -200 400 400" aria-hidden="true"></svg>
+    <div class="pulse"></div>
+    <div class="ring"><img src="assets/chavez.jpg" alt="Portrait of Kian Xyruz Chavez in a black suit against a crimson backdrop"></div>
+    <canvas id="arc" aria-hidden="true"></canvas>
+    <div class="shock"></div><div class="shock s2"></div>
+    <div class="chip c1">🐍 Python</div><div class="chip c2">🗄️ SQL</div><div class="chip c3">⚙️ VB.NET</div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2 class="title">About Me</h2>
+  <div class="about rv">
+    <div class="card"><p>I am a second-year Computer Science student who enjoys learning about programming, technology, and game development. I like creating projects that improve my problem-solving and creative skills. My goal is to become a successful software developer, graduate from college, and build my own business in the future.</p></div>
+    <dl class="card facts"><dt>Name</dt><dd>Kian Xyruz Chavez (Vez)</dd><dt>Course</dt><dd>BSCS, 2nd Year</dd><dt>Team role</dt><dd>UI Designer / Project Coordinator</dd></dl>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="title">Skills: Cultivation Realms</h2>
+  <div class="card rv" id="gauges"></div>
+  <div class="card rv" style="margin-top:22px"><h3 style="font-size:1.1rem">Programming languages</h3>
+    <div class="langs"><span class="tag gold">Python</span><span class="tag gold">SQL / MySQL</span><span class="tag gold">VB.NET</span></div></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2 class="title">Projects</h2>
+  <div class="grid g3">
+    <article class="card proj rv"><h3>CinemaFlix Booking System</h3><p>A Python-based cinema reservation system that allows users to book movie tickets, select seats, and manage reservations. It uses programming fundamentals, functions, error handling, and database concepts to organize booking records.</p><div class="tags"><span class="tag">Python</span><span class="tag">Database</span></div></article>
+    <article class="card proj rv"><h3>STCU Water Refilling Automated Sales Tracking System</h3><span class="tag gold">Proposed</span><p style="margin-top:12px">A system designed to help a water-refilling business record sales, track daily transactions, and generate sales reports. The project aims to make sales monitoring more organized and efficient.</p><div class="tags"><span class="tag">UI Design</span><span class="tag">SQL</span></div></article>
+    <article class="card proj rv"><h3>BSCS Student Portal</h3><span class="tag gold">Proposed</span><p style="margin-top:12px">A student portal designed to organize student information and provide convenient access to academic announcements and other school-related information. Its goal is to make school information easier for students to access.</p><div class="tags"><span class="tag">Web</span><span class="tag">UI/UX</span></div></article>
+  </div>
+</div></section>
+
+<section id="journey"><div class="wrap">
+  <h2 class="title">Journey</h2>
+  <ul class="tl">
+    <li class="card rv">Participated in academic programming and system development projects.</li>
+    <li class="card rv">Served as a UI Designer and Project Coordinator for a proposed business tracking system.</li>
+    <li class="card rv">Developed skills in programming, database concepts, and user interface design.</li>
+    <li class="card rv">Gained experience in teamwork, project planning, and problem-solving through academic projects.</li>
+  </ul>
+  <div class="hob rv"><span>🎮 Playing online games</span><span>💃 Dancing and choreography</span><span>🎧 Listening to music</span><span>📖 Reading manhwa</span><span>🎬 Watching movies</span><span>💻 Exploring technology and game development</span></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2 class="title">Contact</h2>
+  <div class="contact">
+    <div class="card rv"><h3>Let's talk</h3>
+      <a class="l" href="mailto:kianxyruz93@gmail.com">Email: kianxyruz93@gmail.com</a>
+      <a class="l" href="https://www.facebook.com/chvzXYZ" target="_blank" rel="noopener">Facebook: facebook.com/chvzXYZ</a>
+      <a class="l" href="https://www.instagram.com/chvz_xyz?exln=bWZtOXduMWdmMWJs" target="_blank" rel="noopener">Instagram: @chvz_xyz</a></div>
+    <form class="card rv" id="form">
+      <label>Name<input name="n" required autocomplete="name"></label>
+      <label>Email<input type="email" name="e" required autocomplete="email"></label>
+      <label>Message<textarea name="m" required></textarea></label>
+      <button class="btn fill" type="submit">Send message</button>
+    </form>
+  </div>
+</div></section>
+</main>
+<footer>© 2026 Kian Xyruz Chavez (Vez). All rights reserved.</footer>
+
+<script src="chavez.js" defer></script>
+</body>
+</html>
