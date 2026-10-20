@@ -27,8 +27,8 @@ var ICONS = {
 function ic(n){return '<span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true">'+ICONS[n]+'</svg></span>'}
 var SKILLS = [
   ['Design','pen',['Canva','Basic UI/UX Design','Wireframing','Layout and Color Selection','Basic Prototyping']],
-  ['Programming','code',['Python','VB.NET','HTML','CSS','Basic JavaScript']],
-  ['Tools','tool',['Visual Studio Code','Visual Studio','GitHub','Canva','Data Modeler']]
+  ['Programming','code',['Python','MYSQL','VB.NET','HTML','CSS','Basic JavaScript']],
+  ['Tools','tool',['PyCharm','Visual Studio Code','Visual Studio','Canva','Data Modeler']]
 ];
 /* Set url to a live demo or repository to turn "Project Preview" into "View Project". Add tools:'...' once confirmed. */
 var PROJECTS = [
