@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bianca Sico | UI/UX Designer & Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sico.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header>
+  <a href="#home" class="logo">&lt;Bianca/&gt;</a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <nav id="nav">
+    <ul>
+      <li><a class="link" href="#about">About</a></li>
+      <li><a class="link" href="#skills">Skills</a></li>
+      <li><a class="link" href="#projects">Projects</a></li>
+      <li><a class="link" href="#achievements">Achievements</a></li>
+      <li><a class="link" href="#hobbies">Hobbies</a></li>
+      <li><a class="btn-contact" href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="hero-text">
+    <span class="nick">Nickname: Yayáng</span>
+    <h1>Hi, I'm Bianca Sico</h1>
+    <h2>UI/UX Designer &amp; <span class="typed" id="typed"></span><span class="cursor"></span></h2>
+    <p class="tagline">BS Computer Science · Designing systems people enjoy using.</p>
+    <a href="#projects" class="view-work">View my work <span>→</span></a>
+  </div>
+  <div class="photo-wrap">
+    <div class="frame">BS
+      <!-- Home photo: images/formal.jpg -->
+      <img src="images/formal.jpg" alt="Bianca Sico" onerror="this.style.display='none'">
+    </div>
+  </div>
+  <div class="scroll-hint">scroll ↓</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="title reveal">About Me</h2>
+  <p class="subtitle reveal d1">A little about who I am and what I love to build.</p>
+  <div class="about-grid">
+    <div class="about-photo reveal">
+      <img src="images/about.jpg" alt="Bianca Sico" onerror="this.style.display='none'">
+    </div>
+    <div class="about-text reveal d1">
+      <h3>Hi! I'm <b>Bianca Sico</b></h3>
+      <p>I am a Computer Science student interested in web design and development. I enjoy creating user-friendly interfaces and developing systems, websites, and databases. I continuously improve my skills through learning, practice, and teamwork.</p>
+      <div class="info-row">
+        <span class="chip">🎓 BS Computer Science</span>
+        <span class="chip">🎨 UI/UX Designer &amp; Developer</span>
+        <span class="chip">✨ Yayáng</span>
+      </div>
+      <div class="mini-cards">
+        <div class="mini"><b>UI/UX Design</b><span>Theme-based, user-friendly interfaces.</span></div>
+        <div class="mini"><b>Development</b><span>Systems, websites &amp; databases.</span></div>
+        <div class="mini"><b>Teamwork</b><span>Learning and growing together.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="title reveal">Skills</h2>
+  <p class="subtitle reveal d1">What I bring to every team and project.</p>
+  <div class="skill-grid">
+    <div class="card reveal"><div class="ico">🎨</div><h4>UI/UX Design</h4></div>
+    <div class="card reveal d1"><div class="ico">🧩</div><h4>User-Friendly &amp; Theme-Based Interface Design</h4></div>
+    <div class="card reveal d2"><div class="ico">🗄️</div><h4>MySQL Database Management</h4></div>
+    <div class="card reveal"><div class="ico">🔁</div><h4>CRUD Operations</h4></div>
+    <div class="card reveal d1"><div class="ico">💻</div><h4>System &amp; Web Development</h4></div>
+  </div>
+  <h3 class="tech-title reveal">Programming Languages &amp; Technologies</h3>
+  <div class="bars reveal">
+    <div class="bar"><div class="bar-top"><span>Python</span></div><div class="track"><div class="fill" data-w="80%"></div></div></div>
+    <div class="bar"><div class="bar-top"><span>VB.NET</span></div><div class="track"><div class="fill" data-w="70%"></div></div></div>
+    <div class="bar"><div class="bar-top"><span>MySQL</span></div><div class="track"><div class="fill" data-w="85%"></div></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="title reveal">My Projects</h2>
+  <p class="subtitle reveal d1">Here are some of the projects I've worked on with my team.</p>
+  <div class="proj-grid">
+    <article class="proj reveal">
+      <div class="proj-img">📚</div>
+      <div class="proj-body">
+        <h4>Library Management System</h4>
+        <p>A group-developed system created using Python to help manage library records and transactions efficiently.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Group Project</span></div>
+        <button class="btn" data-title="Library Management System" data-desc="A group-developed system created using Python to help manage library records and transactions efficiently." data-tech="Python · MySQL · CRUD Operations">View Project</button>
+      </div>
+    </article>
+    <article class="proj reveal d1">
+      <div class="proj-img">📶</div>
+      <div class="proj-body">
+        <h4>Piso WiFi</h4>
+        <p>A group business project focused on providing affordable and accessible internet connectivity.</p>
+        <div class="tags"><span class="tag">Business</span><span class="tag">Group Project</span></div>
+        <button class="btn" data-title="Piso WiFi" data-desc="A group business project focused on providing affordable and accessible internet connectivity." data-tech="Teamwork · Business Planning · Connectivity">View Project</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <h2 class="title reveal">Achievements</h2>
+  <p class="subtitle reveal d1">Milestones from every stage of my education.</p>
+  <div class="tabs reveal">
+    <button class="tab active" data-t="jhs">Junior High · Grade 10</button>
+    <button class="tab" data-t="g11">Senior High · Grade 11</button>
+    <button class="tab" data-t="g12">Senior High · Grade 12</button>
+    <button class="tab" data-t="col">College</button>
+  </div>
+  <div class="ach-panel active" id="jhs">
+    <div class="ach"><span class="medal">🎖️</span>4th Quarter With Honors</div>
+    <div class="ach"><span class="medal">🏅</span>Consistent Top 10 in English</div>
+    <div class="ach"><span class="medal">📅</span>Perfect Attendance Awardee</div>
+  </div>
+  <div class="ach-panel" id="g11">
+    <div class="ach"><span class="medal">🎖️</span>Consistent Honor Student</div>
+    <div class="ach"><span class="medal">🔬</span>Best in Research</div>
+    <div class="ach"><span class="medal">🥇</span>1st Place — Culminating Activity</div>
+  </div>
+  <div class="ach-panel" id="g12">
+    <div class="ach"><span class="medal">🎖️</span>Consistent Honor Student</div>
+  </div>
+  <div class="ach-panel" id="col">
+    <div class="ach"><span class="medal">🎓</span>1st Year – 2nd Semester Dean's Lister</div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+  <h2 class="title reveal">Hobbies &amp; Interests</h2>
+  <p class="subtitle reveal d1">What keeps my creativity going.</p>
+  <div class="hobby-grid">
+    <div class="hobby reveal"><span class="ico">📖</span>Reading philosophy books</div>
+    <div class="hobby reveal d1"><span class="ico">🧠</span>Reading psychology books</div>
+    <div class="hobby reveal d2"><span class="ico">📚</span>Reading manga</div>
+    <div class="hobby reveal"><span class="ico">✍️</span>Journaling</div>
+    <div class="hobby reveal d1"><span class="ico">💡</span>Exploring creative ideas</div>
+    <div class="hobby reveal d2"><span class="ico">🍰</span>Enjoying sweets</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="title reveal">Contact Me</h2>
+  <p class="subtitle reveal d1">Let's connect! Send me a message or find me on social media.</p>
+  <div class="contact-grid">
+    <div class="c-info reveal">
+      <a class="c-item" href="mailto:biancasico109@gmail.com"><img class="ci" src="images/gmail.png" alt="Gmail"><div><small>Email</small>biancasico109@gmail.com</div></a>
+      <a class="c-item" href="https://www.facebook.com/bianca.sico" target="_blank" rel="noopener"><img class="ci" src="images/facebook.png" alt="Facebook"><div><small>Facebook</small>Bianca Sico</div></a>
+      <a class="c-item" href="https://www.instagram.com/bianxxj?mdxt=anhoNHJxMm4wbm94" target="_blank" rel="noopener"><img class="ci" src="images/instagram.png" alt="Instagram"><div><small>Instagram</small>@bianxxj</div></a>
+    </div>
+    <form id="form" class="reveal d1">
+      <input type="text" id="fname" placeholder="Your name" required>
+      <input type="email" id="femail" placeholder="Your email" required>
+      <textarea id="fmsg" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div><div class="name">Bianca Sico</div><p>UI/UX Designer &amp; Developer · BS Computer Science student passionate about user-friendly design and development.</p></div>
+  <div><h5>Quick Links</h5><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a></div>
+  <div><h5>Connect</h5><a href="https://www.facebook.com/bianca.sico" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/bianxxj?mdxt=anhoNHJxMm4wbm94" target="_blank" rel="noopener">Instagram</a><a href="mailto:biancasico109@gmail.com">Email</a></div>
+  <div><h5>Group Website</h5>
+    <!-- Palitan ang href ng actual link ng View Members page ng group website -->
+    <a href="members.html">← Back to Members</a><a href="index.html">Group Home</a></div>
+  <div class="copy">© 2026 Bianca Sico. All rights reserved.</div>
+</footer>
+
+<button class="top-btn" id="topBtn" aria-label="Back to top">↑</button>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" id="closeModal" aria-label="Close">×</button>
+    <h4 id="mTitle"></h4>
+    <p id="mDesc"></p>
+    <p><b>Tech / Skills:</b> <span id="mTech"></span></p>
+  </div>
+</div>
+
+<script src="sico.js"></script>
+</body>
+</html>
