@@ -5,7 +5,7 @@ var CONFIG = {
   email: 'sevillabianca58@gmail.com',
   facebook: 'https://www.facebook.com/share/1Sp9om5mPA/',
   instagram: 'https://www.instagram.com/bangky_pixie?srtk=MWZ5MjF5cThkMTBvbw==',
-  github: '' /* paste your GitHub profile URL here, e.g. https://github.com/yourname */
+  github: 'https://sevillabianca58-rgb.github.io/MANDARAMBONG/'
 };
 var INFO = [
   ['Full name','Bianca A. Sevilla','user'],
