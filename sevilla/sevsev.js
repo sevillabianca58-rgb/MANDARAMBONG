@@ -184,7 +184,7 @@ if(matchMedia('(hover:hover)').matches&&!matchMedia('(prefers-reduced-motion:red
 (function(){
   var car=document.getElementById('hcar');if(!car)return;
   var track=document.getElementById('hTrack'),slides=[].slice.call(track.children),dotsEl=document.getElementById('hDots'),tabsEl=document.getElementById('hTabs');
-  var bases=['images/thingsienjoy-sevsev/','image/thingsienjoy-sevsev/'],exts=['jpg','jpeg','png','webp','JPG','JPEG','PNG','jfif'];
+  var bases=['sevilla/images/thingsienjoy-sevsev/','image/thingsienjoy-sevsev/'],exts=['jpg','jpeg','png','webp','JPG','JPEG','PNG','jfif'];
   var alt={'cats-dogs':['cats-dogs','cats&dogs','cats_dogs','catsdogs','cats and dogs']};
   var i=0,n=slides.length,dots=[],tabs=[];
   function load(img,name){
@@ -218,7 +218,7 @@ if(matchMedia('(hover:hover)').matches&&!matchMedia('(prefers-reduced-motion:red
 
 /* moments I treasure: photo stacks + swipeable gallery */
 (function(){
-  var BASE='images/moments-sevsev/';
+  var BASE='sevilla/images/moments-sevsev/';
   var EXTS=['jpg','jpeg','png','webp','JPG','JPEG','PNG'];
   var GROUPS=[['family','Family','#F8DDE9','#EFA2C1'],['friends','Friends','#e9e0fa','#B8A3E8'],['bf','Boyfriend','#ffe9c2','#F4B94D'],['me','Me','#d9f1e3','#a8e0bd'],['random','Random','#ffd9c9','#F8DDE9']];
   /* Photos are found automatically when named 1.jpg, 2.jpg, 3.jpg... inside each folder.
